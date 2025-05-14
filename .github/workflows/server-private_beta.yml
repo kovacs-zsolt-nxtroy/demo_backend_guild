@@ -9,6 +9,7 @@ env:
   DOCKER_FILE: 'server_private_beta/Dockerfile'
   AZURE_INSTANCE_NAME: 'ca-nexiusai-private-beta-monaco'
   AZURE_RESOURCE_GROUP_NAME: 'rg-ai-feature'
+  IMAGE_NAME: 'zsolt/backend_guild/server_private_beta'
 jobs:
 
   build:
@@ -26,7 +27,7 @@ jobs:
           AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
           AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           AZURE_REGISTRY_NAME: ${{ vars.AZURE_REGISTRY_NAME }}
-          IMAGE_NAME: ${{ vars.IMAGE_NAME_PUBLIC }}
+          IMAGE_NAME: ${{ env.IMAGE_NAME}}
           IMAGE_TAG: ${{ github.ref_name }}
           IMAGE_POSTFIX: ${{ github.run_number}}
           DOCKER_FILE: ${{env.DOCKER_FILE}}
@@ -46,7 +47,7 @@ jobs:
           AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
           AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           AZURE_REGISTRY_NAME: ${{ vars.AZURE_REGISTRY_NAME }}
-          IMAGE_NAME: ${{ vars.IMAGE_NAME_PUBLIC }}
+          IMAGE_NAME: ${{ env.IMAGE_NAME}}
           IMAGE_TAG: ${{ github.ref_name }}
           IMAGE_POSTFIX: ${{ github.run_number}}
           AZURE_INSTANCE_NAME: ${{env.AZURE_INSTANCE_NAME}}
