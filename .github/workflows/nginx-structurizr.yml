@@ -1,0 +1,27 @@
+name: Public Server Build and Deploy
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'server_public/**'
+jobs:
+  build:
+    name: Build Docker Image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Build Docker Image
+        id: build
+        uses: nexius-learning/nexiusai-action/build@v6.2.1
+        with:
+          AZURE_CLIENT_ID: ${{secrets.AZURE_CLIENT_ID}}
+          AZURE_CLIENT_SECRET: ${{secrets.AZURE_CLIENT_SECRET }}
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          AZURE_REGISTRY_NAME: ${{ vars.AZURE_REGISTRY_NAME }}
+          IMAGE_NAME: ${{ vars.IMAGE_NAME_PUBLIC }}
+          IMAGE_TAG: ${{ github.ref_name }}
+          IMAGE_POSTFIX: ${{ github.run_number}}
+          DOCKER_FILE: 'server_public/Dockerfile'
