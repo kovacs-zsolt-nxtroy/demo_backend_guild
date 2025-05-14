@@ -1,0 +1,197 @@
+{
+  "configuration" : { },
+  "description" : "Description",
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedAgent" : "structurizr-ui",
+  "lastModifiedDate" : "2025-05-14T23:47:58Z",
+  "model" : {
+    "properties" : {
+      "structurizr.groupSeparator" : "/"
+    },
+    "softwareSystems" : [ {
+      "documentation" : { },
+      "group" : "Monaco",
+      "id" : "1",
+      "location" : "Unspecified",
+      "name" : "Public Application",
+      "properties" : {
+        "structurizr.dsl.identifier" : "publicapplication"
+      },
+      "relationships" : [ {
+        "description" : "Uses",
+        "destinationId" : "2",
+        "id" : "6",
+        "sourceId" : "1",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Uses",
+        "destinationId" : "3",
+        "id" : "7",
+        "sourceId" : "1",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Software System,Azure Container Application",
+      "url" : "https://ca-nexiusai-public-monaco.ambitiousforest-2350b2d0.westeurope.azurecontainerapps.io"
+    }, {
+      "documentation" : { },
+      "group" : "Monaco",
+      "id" : "2",
+      "location" : "Unspecified",
+      "name" : "Private Alfa Application",
+      "properties" : {
+        "structurizr.dsl.identifier" : "privatealfaapplication"
+      },
+      "tags" : "Element,Software System,Azure Container Application",
+      "url" : "https://ca-nexiusai-public-monaco.ambitiousforest-2350b2d0.westeurope.azurecontainerapps.io/alfa"
+    }, {
+      "documentation" : { },
+      "group" : "Monaco",
+      "id" : "3",
+      "location" : "Unspecified",
+      "name" : "Private Beta Application",
+      "properties" : {
+        "structurizr.dsl.identifier" : "privatebetaapplication"
+      },
+      "tags" : "Element,Software System,Azure Container Application",
+      "url" : "https://ca-nexiusai-public-monaco.ambitiousforest-2350b2d0.westeurope.azurecontainerapps.io/beta"
+    }, {
+      "description" : "The public internet",
+      "documentation" : { },
+      "id" : "4",
+      "location" : "Unspecified",
+      "name" : "Public Internet",
+      "properties" : {
+        "structurizr.dsl.identifier" : "publicinternet"
+      },
+      "relationships" : [ {
+        "description" : "Uses",
+        "destinationId" : "1",
+        "id" : "5",
+        "sourceId" : "4",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Software System,Public Internet"
+    } ]
+  },
+  "name" : "Name",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJOYW1lIiAiRGVzY3JpcHRpb24iIHsKCiAgICAhaWRlbnRpZmllcnMgaGllcmFyY2hpY2FsCiAgICBtb2RlbCB7CiAgICAgICAgcHJvcGVydGllcyB7CiAgICAgICAgICAgICJzdHJ1Y3R1cml6ci5ncm91cFNlcGFyYXRvciIgIi8iCiAgICAgICAgfQoKICAgICAgICBtb25hY28gPSBncm91cCAiTW9uYWNvIiB7CgogICAgICAgICAgICAgICAgUHVibGljQXBwbGljYXRpb24gPSBzb2Z0d2FyZVN5c3RlbSAiUHVibGljIEFwcGxpY2F0aW9uIiB7CiAgICAgICAgICAgICAgICAgICAgdGFncyAiQXp1cmUgQ29udGFpbmVyIEFwcGxpY2F0aW9uIgogICAgICAgICAgICAgICAgICAgIHVybCAiaHR0cHM6Ly9jYS1uZXhpdXNhaS1wdWJsaWMtbW9uYWNvLmFtYml0aW91c2ZvcmVzdC0yMzUwYjJkMC53ZXN0ZXVyb3BlLmF6dXJlY29udGFpbmVyYXBwcy5pbyIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIFByaXZhdGVBbGZhQXBwbGljYXRpb24gPSBzb2Z0d2FyZVN5c3RlbSAiUHJpdmF0ZSBBbGZhIEFwcGxpY2F0aW9uIiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRhZ3MgIkF6dXJlIENvbnRhaW5lciBBcHBsaWNhdGlvbiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdXJsICJodHRwczovL2NhLW5leGl1c2FpLXB1YmxpYy1tb25hY28uYW1iaXRpb3VzZm9yZXN0LTIzNTBiMmQwLndlc3RldXJvcGUuYXp1cmVjb250YWluZXJhcHBzLmlvL2FsZmEiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFByaXZhdGVCZXRhQXBwbGljYXRpb24gPSBzb2Z0d2FyZVN5c3RlbSAiUHJpdmF0ZSBCZXRhIEFwcGxpY2F0aW9uIiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdGFncyAiQXp1cmUgQ29udGFpbmVyIEFwcGxpY2F0aW9uIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHVybCAiaHR0cHM6Ly9jYS1uZXhpdXNhaS1wdWJsaWMtbW9uYWNvLmFtYml0aW91c2ZvcmVzdC0yMzUwYjJkMC53ZXN0ZXVyb3BlLmF6dXJlY29udGFpbmVyYXBwcy5pby9iZXRhIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CgoKICAgICAgICBwdWJsaWNJbnRlcm5ldCA9IHNvZnR3YXJlU3lzdGVtICJQdWJsaWMgSW50ZXJuZXQiIHsKICAgICAgICAgICAgdGFncyAiUHVibGljIEludGVybmV0IgogICAgICAgICAgICBkZXNjcmlwdGlvbiAiVGhlIHB1YmxpYyBpbnRlcm5ldCIKICAgICAgICB9CiAgICAgICAgcHVibGljSW50ZXJuZXQgLT4gUHVibGljQXBwbGljYXRpb24gIlVzZXMiCiAgICAgICAgUHVibGljQXBwbGljYXRpb24gLT4gUHJpdmF0ZUFsZmFBcHBsaWNhdGlvbiAiVXNlcyIKICAgICAgICBQdWJsaWNBcHBsaWNhdGlvbiAtPiBQcml2YXRlQmV0YUFwcGxpY2F0aW9uICJVc2VzIgoKICAgIH0KICAgIHZpZXdzIHsKICAgICAgICBwcm9wZXJ0aWVzIHsKICAgICAgICAgICAgInN0cnVjdHVyaXpyLnNvcnQiICJjcmVhdGVkIgogICAgICAgIH0KICAgICAgICBzeXN0ZW1MYW5kc2NhcGUgIk92ZXJ2aWV3IiB7CiAgICAgICAgICAgIGluY2x1ZGUgbW9uYWNvIHB1YmxpY0ludGVybmV0CiAgICAgICAgICAgIGF1dG9sYXlvdXQgdGIKICAgICAgICB9CgoKICAgICAgICBzdHlsZXMgewogICAgICAgICAgICBlbGVtZW50ICJBenVyZSBDb250YWluZXIgQXBwbGljYXRpb24iIHsKICAgICAgICAgICAgICAgIHNoYXBlIFJvdW5kZWRCb3gKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzAwNzhENAogICAgICAgICAgICAgICAgY29sb3IgI0ZGRkZGRgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkF6dXJlIENvbnRhaW5lciBBcHBsaWNhdGlvbiBFbnZpcm9ubWVudCIgewogICAgICAgICAgICAgICAgc2hhcGUgSGV4YWdvbgogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjMDA1QTlFCiAgICAgICAgICAgICAgICBjb2xvciAjRkZGRkZGCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiQXp1cmUgTG9nIEFuYWx5dGljcyIgewogICAgICAgICAgICAgICAgc2hhcGUgQ3lsaW5kZXIKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzZCNTJBRQogICAgICAgICAgICAgICAgY29sb3IgI0ZGRkZGRgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkF6dXJlIFBvc3RncmVTcWwgRGF0YWJhc2UiIHsKICAgICAgICAgICAgICAgIHNoYXBlIEN5bGluZGVyCiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICMwMEI3QzMKICAgICAgICAgICAgICAgIGNvbG9yICNGRkZGRkYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJBenVyZSBNb25nb0RiIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBDeWxpbmRlcgogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjMDA3NThGCiAgICAgICAgICAgICAgICBjb2xvciAjRkZGRkZGCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiQXp1cmUgS2V5IFZhdWx0IiB7CiAgICAgICAgICAgICAgICBzaGFwZSBIZXhhZ29uCiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICM2QzlCRDEKICAgICAgICAgICAgICAgIGNvbG9yICNGRkZGRkYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJBenVyZSBCbG9iIFN0b3JhZ2UiIHsKICAgICAgICAgICAgICAgIHNoYXBlIEZvbGRlcgogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjNEY2QkVECiAgICAgICAgICAgICAgICBjb2xvciAjRkZGRkZGCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiQXp1cmUgUmVkaXMgQ2FjaGUiIHsKICAgICAgICAgICAgICAgIHNoYXBlIEN5bGluZGVyCiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICMwMDVCOUYKICAgICAgICAgICAgICAgIGNvbG9yICNGRkZGRkYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJBenVyZSBXZWIgQXBwIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBSb3VuZGVkQm94CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICMxNDkwREYKICAgICAgICAgICAgICAgIGNvbG9yICNGRkZGRkYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJBenVyZSBTaWduYWxSIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBIZXhhZ29uCiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICMzRThFREUKICAgICAgICAgICAgICAgIGNvbG9yICNGRkZGRkYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJFeHRlcm5hbCBTeXN0ZW0iIHsKICAgICAgICAgICAgICAgIHNoYXBlIFJvdW5kZWRCb3gKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgI0ZGOTgwMAogICAgICAgICAgICAgICAgY29sb3IgIzAwMDAwMAogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIlB1YmxpYyBJbnRlcm5ldCIgewogICAgICAgICAgICAgICAgc2hhcGUgRWxsaXBzZQogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjQ0NDQ0NDCiAgICAgICAgICAgICAgICBjb2xvciAjMDAwMDAwCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9Cn0="
+  },
+  "views" : {
+    "configuration" : {
+      "branding" : { },
+      "lastSavedView" : "Overview",
+      "metadataSymbols" : "SquareBrackets",
+      "properties" : {
+        "structurizr.sort" : "created"
+      },
+      "styles" : {
+        "elements" : [ {
+          "background" : "#0078d4",
+          "color" : "#ffffff",
+          "shape" : "RoundedBox",
+          "tag" : "Azure Container Application"
+        }, {
+          "background" : "#005a9e",
+          "color" : "#ffffff",
+          "shape" : "Hexagon",
+          "tag" : "Azure Container Application Environment"
+        }, {
+          "background" : "#6b52ae",
+          "color" : "#ffffff",
+          "shape" : "Cylinder",
+          "tag" : "Azure Log Analytics"
+        }, {
+          "background" : "#00b7c3",
+          "color" : "#ffffff",
+          "shape" : "Cylinder",
+          "tag" : "Azure PostgreSql Database"
+        }, {
+          "background" : "#00758f",
+          "color" : "#ffffff",
+          "shape" : "Cylinder",
+          "tag" : "Azure MongoDb"
+        }, {
+          "background" : "#6c9bd1",
+          "color" : "#ffffff",
+          "shape" : "Hexagon",
+          "tag" : "Azure Key Vault"
+        }, {
+          "background" : "#4f6bed",
+          "color" : "#ffffff",
+          "shape" : "Folder",
+          "tag" : "Azure Blob Storage"
+        }, {
+          "background" : "#005b9f",
+          "color" : "#ffffff",
+          "shape" : "Cylinder",
+          "tag" : "Azure Redis Cache"
+        }, {
+          "background" : "#1490df",
+          "color" : "#ffffff",
+          "shape" : "RoundedBox",
+          "tag" : "Azure Web App"
+        }, {
+          "background" : "#3e8ede",
+          "color" : "#ffffff",
+          "shape" : "Hexagon",
+          "tag" : "Azure SignalR"
+        }, {
+          "background" : "#ff9800",
+          "color" : "#000000",
+          "shape" : "RoundedBox",
+          "tag" : "External System"
+        }, {
+          "background" : "#cccccc",
+          "color" : "#000000",
+          "shape" : "Ellipse",
+          "tag" : "Public Internet"
+        } ]
+      },
+      "terminology" : { }
+    },
+    "systemLandscapeViews" : [ {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "dimensions" : {
+        "height" : 1974,
+        "width" : 1640
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 594,
+        "y" : 765
+      }, {
+        "id" : "2",
+        "x" : 219,
+        "y" : 1365
+      }, {
+        "id" : "3",
+        "x" : 969,
+        "y" : 1365
+      }, {
+        "id" : "4",
+        "x" : 594,
+        "y" : 165
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "key" : "Overview",
+      "order" : 1,
+      "relationships" : [ {
+        "id" : "5"
+      }, {
+        "id" : "6"
+      }, {
+        "id" : "7"
+      } ]
+    } ]
+  }
+}
