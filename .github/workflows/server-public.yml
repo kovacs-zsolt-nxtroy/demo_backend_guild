@@ -9,10 +9,16 @@ jobs:
   build:
     name: Build Docker Image
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        environment: [
+          { name: 'public', path: 'server_public/**', docker_file: 'server_public/Dockerfile'},
+        ]
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Build Docker Image
+      - name: Build Docker Image ${{ matrix.environment.name }}
+        if: parth == matrix.environment.path
         id: build
         uses: kovacs-zsolt-nxtroy/zsolt-action/build@v6.2.2
         with:
@@ -24,9 +30,10 @@ jobs:
           IMAGE_NAME: ${{ vars.IMAGE_NAME_PUBLIC }}
           IMAGE_TAG: ${{ github.ref_name }}
           IMAGE_POSTFIX: ${{ github.run_number}}
-          DOCKER_FILE: 'server_public/Dockerfile'
+          DOCKER_FILE: ${{ matrix.environment.docker_file }}
           INSTALL_AZ_CLI: 'false'
   deploy:
+    if: false
     name: Build Docker Image
     runs-on: ubuntu-latest
     needs: build
