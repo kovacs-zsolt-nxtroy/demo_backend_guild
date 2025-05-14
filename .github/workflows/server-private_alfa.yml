@@ -1,13 +1,13 @@
-name: Public Server Build and Deploy
+name: Private Alfa Server Build and Deploy
 on:
   push:
     branches:
       - 'main'
     paths:
-      - 'server_public/**'
+      - 'server_private_alfa/**'
 env:
-  DOCKER_FILE: 'server_public/Dockerfile'
-  AZURE_INSTANCE_NAME: 'ca-nexiusai-public-monaco'
+  DOCKER_FILE: 'server_private_alfa/Dockerfile'
+  AZURE_INSTANCE_NAME: 'ca-nexiusai-private-alfa-monaco'
   AZURE_RESOURCE_GROUP_NAME: 'rg-ai-feature'
 jobs:
 

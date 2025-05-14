@@ -1,13 +1,13 @@
-name: Public Server Build and Deploy
+name: Private Beta Server Build and Deploy
 on:
   push:
     branches:
       - 'main'
     paths:
-      - 'server_public/**'
+      - 'server_private_beta/**'
 env:
-  DOCKER_FILE: 'server_public/Dockerfile'
-  AZURE_INSTANCE_NAME: 'ca-nexiusai-public-monaco'
+  DOCKER_FILE: 'server_private_beta/Dockerfile'
+  AZURE_INSTANCE_NAME: 'ca-nexiusai-private-beta-monaco'
   AZURE_RESOURCE_GROUP_NAME: 'rg-ai-feature'
 jobs:
 
