@@ -3,8 +3,8 @@ on:
   push:
     branches:
       - 'main'
-    paths:
-      - 'server_public/**'
+#    paths:
+#      - 'server_public/**'
 jobs:
   build:
     name: Build Docker Image
