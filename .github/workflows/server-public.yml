@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - 'main'
-#    paths:
-#      - 'server_public/**'
 jobs:
   build:
     name: Build Docker Image
@@ -18,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Build Docker Image ${{ matrix.environment.name }}
-        if: parth == matrix.environment.path
+        if: github.event.path  == matrix.environment.path
         id: build
         uses: kovacs-zsolt-nxtroy/zsolt-action/build@v6.2.2
         with:
