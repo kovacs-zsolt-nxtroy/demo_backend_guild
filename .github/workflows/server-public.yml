@@ -11,12 +11,16 @@ jobs:
       matrix:
         environment: [
           { name: 'public', path: 'server_public/**', docker_file: 'server_public/Dockerfile'},
+          { name: 'private alfa', path: 'server_private_alfa/**', docker_file: 'server_privata_alfa/Dockerfile'},
         ]
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      - name: echo
+        run: |
+          echo ${{github.event.path}}
       - name: Build Docker Image ${{ matrix.environment.name }}
-        if: github.event.path  == matrix.environment.path
+        if: contains(github.event.push.paths, matrix.environment.path)
         id: build
         uses: kovacs-zsolt-nxtroy/zsolt-action/build@v6.2.2
         with:
