@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Build Docker Image
         id: build
-        uses: kovacs-zsolt-nxtroy/zsolt-action/build@v6.2.2
+        uses: kovacs-zsolt-nxtroy/zsolt-action/build@v7.0.0
         with:
           AZURE_CLIENT_ID: ${{secrets.AZURE_CLIENT_ID}}
           AZURE_CLIENT_SECRET: ${{secrets.AZURE_CLIENT_SECRET }}
@@ -39,7 +39,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Build Docker Image
-        uses: kovacs-zsolt-nxtroy/zsolt-action/deploy@v6.2.2
+        uses: kovacs-zsolt-nxtroy/zsolt-action/deploy@v7.0.0
         with:
           AZURE_CLIENT_ID: ${{secrets.AZURE_CLIENT_ID}}
           AZURE_CLIENT_SECRET: ${{secrets.AZURE_CLIENT_SECRET }}
@@ -51,3 +51,4 @@ jobs:
           IMAGE_POSTFIX: ${{ github.run_number}}
           AZURE_INSTANCE_NAME: ${{env.AZURE_INSTANCE_NAME}}
           AZURE_RESOURCE_GROUP_NAME: ${{env.AZURE_RESOURCE_GROUP_NAME}}
+          INSTALL_AZ_CLI: 'false'
